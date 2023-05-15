@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyTutorial</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="typeOf_order">
+        <item>On-Site</item>
+        <item>Take-Away</item>
+        <item>Delivery</item>
+    </string-array>
+
+
+    <string-array name="summary_options">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Annual</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

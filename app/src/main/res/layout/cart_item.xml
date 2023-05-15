@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewCart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    android:background="@drawable/dummy"
+
+    android:padding="4dp">
+
+
+
+
+    <TextView
+        android:id="@+id/order_food_title_tv"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Food Title"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/order_food_desc_tv"
+        android:layout_width="357dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="Food Desc"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/order_food_title_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/order_food_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/order_food_title_tv"></TextView>
+
+    <TextView
+        android:id="@+id/order_food_price_tv"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:text="5.99"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/order_food_desc_tv"
+        app:layout_constraintTop_toBottomOf="@+id/order_food_desc_tv">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="€"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/order_food_price_tv"
+        app:layout_constraintTop_toBottomOf="@+id/order_food_desc_tv"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/order_food_price_tv"
+        app:layout_constraintTop_toBottomOf="@+id/order_food_desc_tv"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="12:00:00"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_food_price_tv" />
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="3dp"
+        android:text="26/04/2023"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_descrease"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/tvQuantity"
+        app:layout_constraintTop_toTopOf="@+id/tvQuantity" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:background="@drawable/add_button_foreground"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuantity"
+        app:layout_constraintStart_toEndOf="@+id/tvQuantity"
+        app:layout_constraintTop_toTopOf="@+id/tvQuantity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

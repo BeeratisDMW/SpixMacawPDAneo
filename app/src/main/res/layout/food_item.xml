@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    android:background="@drawable/dummy"
+    android:padding="4dp">
+
+
+
+
+    <TextView
+        android:id="@+id/food_title_tv"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+<!--    android:text="@{food.title}"-->
+
+    <TextView
+        android:id="@+id/food_desc_tv"
+        android:layout_width="357dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="Desc"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/food_title_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/food_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/food_title_tv"></TextView>
+<!--    android:text="@{food.desc}"-->
+
+    <!--        android:text="@{String.valueOf(food.price) + '€'}"-->
+
+
+    <TextView
+        android:id="@+id/food_price_tv"
+        android:layout_width="75dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/food_desc_tv"
+        app:layout_constraintTop_toBottomOf="@+id/food_desc_tv"
+        app:layout_constraintVertical_bias="0.196"></TextView>
+
+    <Button
+        android:id="@+id/buttonAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="25dp"
+        android:text="Add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_desc_tv"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <!--        android:onClick="@{() -> shopInterface.addItemToCart(food)}"-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

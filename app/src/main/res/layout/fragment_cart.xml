@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.home.CartFragment">
+
+    <RelativeLayout
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/etComments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderCartcRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="381dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="176dp"
+        android:background="@color/purple_200"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comments..."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendOrder"
+        android:layout_width="196dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="92dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComments" />
+
+    <Spinner
+        android:id="@+id/spinnerTypeOforder"
+        android:layout_width="381dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/purple_200"
+        android:entries="@array/typeOf_order"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendOrder"
+        app:layout_constraintEnd_toEndOf="@+id/etComments"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etComments"
+        app:layout_constraintTop_toBottomOf="@+id/etComments"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <Button
+        android:id="@+id/btnClearCart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/delete_button_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSendOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSendOrder" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="376dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Total:"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/etComments"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/etComments"
+        app:layout_constraintTop_toBottomOf="@+id/etComments" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
